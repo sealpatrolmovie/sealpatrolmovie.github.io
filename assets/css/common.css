@@ -43,7 +43,6 @@ body {
 }
 .content .buy ul li {
   float: left;
-  min-width: 150px;
   width: 33.333333%;
 }
 .content .buy ul li a {
@@ -299,5 +298,70 @@ h3 {
 @media (min-width: 851px) {
   [data-columns]::before {
     content: '4 .column.size-1of4';
+  }
+}
+@media (max-width: 750px) {
+  .content .buy h2 {
+    font-size: 13px;
+    line-height: 30px;
+    height: 30px;
+  }
+  .content .buy ul li {
+    width: 50%;
+    height: 30px;
+  }
+  .content .buy ul li a {
+    line-height: 30px;
+    font-size: 13px;
+  }
+  .box {
+    display: none;
+  }
+  .box.skinny {
+    display: block !important;
+  }
+  .box.skinny .contents {
+    padding: 0;
+    font-size: 13px;
+  }
+  .box.skinny .contents h3 {
+    font-size: 16px;
+  }
+  .makers .people {
+    width: 70%;
+    font-size: 13px;
+  }
+  .makers .people h3 {
+    font-size: 16px;
+  }
+  .makers .people .person {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .makers .people .person img {
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-box-shadow: 0 0px 10px 0px #000000;
+    -moz-box-shadow: 0 0px 10px 0px #000000;
+    box-shadow: 0 0px 10px 0px #000000;
+  }
+  .makers .people .person .contents {
+    padding: 20px;
+  }
+  .makers .people .person .contents * {
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  }
+  .makers .people .person .contents *:first-child {
+    margin-top: 0;
+  }
+  .makers .people .person .contents *:last-child {
+    margin-bottom: 0;
+  }
+  .bts h3 {
+    font-size: 15px;
   }
 }

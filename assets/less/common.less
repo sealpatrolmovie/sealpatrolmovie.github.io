@@ -64,7 +64,6 @@ body {
 
       li {
         float: left;
-        min-width: 150px;
         width: 33.333333%;
 
         a {
@@ -289,3 +288,99 @@ h3 {
 @media (min-width: 451px) and (max-width: 700px) { [data-columns]::before { content: '2 .column.size-1of2'; } }
 @media (min-width: 701px) and (max-width: 850px) { [data-columns]::before { content: '3 .column.size-1of3'; } }
 @media (min-width: 851px)                        { [data-columns]::before { content: '4 .column.size-1of4'; } }
+
+
+@media (max-width: 750px) {
+
+  .content {
+
+    .buy {
+
+      h2 {
+        font-size: 13px;
+        line-height: 30px;
+        height: 30px;
+      }
+
+      ul {
+
+        li {
+          width: 50%;
+          height: 30px;
+
+          a {
+            line-height: 30px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .box {
+    display: none;
+
+    &.skinny {
+      display: block !important;
+
+      .contents {
+        padding: 0;
+        font-size: 13px;
+
+        h3 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .makers {
+
+    .people {
+      width: 70%;
+      font-size: 13px;
+
+      h3 {
+        font-size: 16px;
+      }
+
+      .person {
+        width: 100%;
+        margin-bottom: 30px;
+
+        img {
+          .border-bottom-radius(5px);
+          .box-shadow(0 0px 10px 0px #000);
+        }
+
+        .contents {
+
+          * {
+            text-shadow: 0 2px 3px rgba(0,0,0,.5);
+          }
+
+          padding: 20px;
+
+          * > {
+
+            &:first-child {
+              margin-top: 0;
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bts {
+
+
+    h3 {
+      font-size: 15px;
+    }
+  }
+}
