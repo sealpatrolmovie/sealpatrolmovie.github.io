@@ -282,7 +282,7 @@ h3 {
   }
 }
 
-[data-columns]::before { display: none; content: '3 .column.size-1of3'; }
+[data-columns]::before { visibility: hidden; content: '3 .column.size-1of3'; }
 
 @media (max-width: 450px)                        { [data-columns]::before { content: '1 .column';           } }
 @media (min-width: 451px) and (max-width: 700px) { [data-columns]::before { content: '2 .column.size-1of2'; } }

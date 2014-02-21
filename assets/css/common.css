@@ -277,7 +277,7 @@ h3 {
   color: #e6dfc2;
 }
 [data-columns]::before {
-  display: none;
+  visibility: hidden;
   content: '3 .column.size-1of3';
 }
 @media (max-width: 450px) {
